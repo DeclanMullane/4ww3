@@ -6,19 +6,27 @@
 
 	<title>Search Site</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="script.js"></script>
+	<base>
 
 </head>
 
-<body>
+<body onload="search()">
 
 	<header>Some Website</header>
 
 	<div id="navBar">
-		<a href="search.html" class="navItem">Search</a>
-		<a href="submission.html" class="navItem">Submit</a>
-		<a href="registration.html" class="navItem">Register</a>
-		<a class="navItem">Broken</a>
+		<a class="navItem selected" href="search.html">Search</a>
+		<a class="navItem" href="submission.html">Submit</a>
+		<a class="navItem" href="registration.html">Register</a>
+		<a class="navItem" href="results_sample.html">Temporary</a>
+		<form action="results_sample.html" id="test" class="navItem">
+			<input id="searchBar" type="text" placeholder="Search..." />
+			<button id="submit">Submit</button>
+		</form>
 	</div>
+
+
 
 	<footer>A footer</footer>
 

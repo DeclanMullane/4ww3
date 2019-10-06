@@ -21,20 +21,43 @@ footer {
 div#navBar {
 	width: 100%;
 	display: flex;
-	align-items: center;
+	justify-content: space-around;
 	text-align: center;
 	background-color: darkgrey;
 	color: white;
 }
 
-a.navItem {
+.selected {
+	background-color: lightgrey;
+	border-left: darkgrey solid 1px;
+	border-right: darkgrey solid 1px;
+} 
+
+.navItem {
 	color: black;
-	width: 10%;
+	width: 12%;
 	padding: 15px 0px;
 	font-size: 20px;
 	text-decoration: none;
 }
 
-a.navItem:hover {
+.navItem:hover {
 	background-color: lightgrey;
+}
+
+#test {
+	margin-left: auto;
+	width: 25%;
+}
+
+#test:hover {
+	background-color: darkgrey;
+}
+
+#searchBar {
+	width: 50%;
+}
+
+#submit:hover {
+	background-color: white;
 }

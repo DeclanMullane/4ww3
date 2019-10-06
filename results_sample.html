@@ -14,11 +14,29 @@
 	<header>Some Website</header>
 
 	<div id="navBar">
-		<a href="search.html" class="navItem">Search</a>
-		<a href="submission.html" class="navItem">Submit</a>
-		<a href="registration.html" class="navItem">Register</a>
-		<a class="navItem">Broken</a>
+		<a class="navItem" href="search.html">Search</a>
+		<a class="navItem" href="submission.html">Submit</a>
+		<a class="navItem" href="registration.html">Register</a>
+		<a class="navItem" href="results_sample.html">Temporary</a>
+		<div id="test" class="navItem">
+			<input id="searchBar" type="text" placeholder="Search..." />
+			<button id="submit" onclick="myFunc()">Submit</button>
+		</div>
 	</div>
+
+	<section id="searchResults">
+		<h1>Showing 1 through <span>x</span> of <span>y</span> items.</h1>
+
+		<div class="searchItem">
+			<img src="" />
+			<p class="itemDesc">This is an item.</p>
+		</div>
+
+		<div class="searchItem">
+			<img src="" />
+			<p class="itemDesc">This is an item.</p>
+		</div>
+	</section>
 
 	<footer>A footer</footer>
 

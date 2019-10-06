@@ -9,17 +9,21 @@
 
 </head>
 
-<body>
+<body onload="search()">
 
 	<header>Some Website</header>
 
 
 	<!-- Want it to be below header but then at top upon scroll -->
 	<div id="navBar">
-		<a href="search.html" class="navItem">Search</a>
-		<a href="submission.html" class="navItem">Submit</a>
-		<a href="registration.html" class="navItem">Register</a>
-		<a class="navItem">Broken</a>
+		<a class="navItem" href="search.html">Search</a>
+		<a class="navItem" href="submission.html">Submit</a>
+		<a class="navItem selected" href="registration.html">Register</a>
+		<a class="navItem" href="results_sample.html">Temporary</a>
+		<div id="test" class="navItem">
+			<input id="searchBar" type="text" placeholder="Search..." />
+			<button id="submit" onclick="myFunc()">Submit</button>
+		</div>
 	</div>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisi ut tortor porta sollicitudin sit amet et diam. In vel gravida lacus. Curabitur maximus ligula ac sodales ultrices. Phasellus et consequat lectus. Cras bibendum mauris et lacus faucibus dignissim. Vivamus euismod leo nec commodo tincidunt. Aenean sed tortor et erat vestibulum facilisis vel vitae ex. In rutrum nunc et dapibus aliquam. Ut blandit interdum velit, a varius eros ultricies ac. Proin purus felis, consectetur eget libero nec, fringilla condimentum neque. Nunc varius felis ut eros consectetur ullamcorper.</p>
