@@ -4,28 +4,42 @@
 
 <head>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Search Results</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 
-<body>
+<body onload="search()">
 
-	<header>Some Website</header>
-
-	<div id="navBar">
-		<a class="navItem" href="search.html">Search</a>
-		<a class="navItem" href="submission.html">Submit</a>
-		<a class="navItem" href="registration.html">Register</a>
-		<a class="navItem" href="results_sample.html">Temporary</a>
-		<div id="test" class="navItem">
-			<input id="searchBar" type="text" placeholder="Search..." />
-			<button id="submit" onclick="myFunc()">Submit</button>
+	<header>
+		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
+		<div id="navBar">
+			<a class="navItem" href="registration.html">Sign-Up</a>
+			<a class="navItem">Sign-In</a>
+			<a class="navItem" href="submission.html">Submit</a>
+			<a class="navItem" href="search.html">Search</a>
+			<div id="test" class="navItem">
+				<input id="searchBar" type="text" placeholder="Search..." />
+				<button id="submit" onclick="myFunc()">Submit</button>
+			</div>
 		</div>
-	</div>
+	</header>
 
+<!-- Want to implement filters, such as for price, on the results page to further narrow search results. Text search field and rating search option will remain displayed. -->
+
+<!-- Add back search bar here. -->
+
+<!-- Filters go here -->
+
+<!-- Section defined for displaying search results in a tabular format.  -->
 	<section id="searchResults">
-		<h1>Showing 1 through <span>x</span> of <span>y</span> items.</h1>
+		<h1>Showing 1 through <span id="numResOnPage">x</span> of <span id="totalNumRes">y</span> items.</h1>
+
+		<div class="searchItem">
+			<img src="" />
+			<p class="itemDesc">This is an item.</p>
+		</div>
 
 		<div class="searchItem">
 			<img src="" />
@@ -38,7 +52,13 @@
 		</div>
 	</section>
 
-	<footer>A footer</footer>
+<!-- Section defined for displaying search results in a map object. -->
+
+	<footer>
+		<hr />
+
+		<a href="">Sitemap</a>  |  Published: date  |  Author: Declan Mullane
+	</footer>
 
 </body>
 

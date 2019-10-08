@@ -1,0 +1,50 @@
+/* CSS for search elements */
+
+/* Mobile-friendly design. */
+#mainSearch {
+	height: 30px;
+	min-width: 175px;
+}
+
+#searchForm {
+	text-align: center;
+	padding: 25px 0px;
+	margin: auto;
+	width: 90%;
+	height: 200px;
+	border: 1px solid rgba(225, 225, 225, 1);
+	box-shadow: 0px 10px 30px #ADADAD;
+}
+
+#searchElements {
+	display: flex;
+	justify-content: space-around;
+}
+
+#ratingContainer, #searchContainer {
+	padding: 20px;
+	width: 200px;
+}
+
+#ratingFilter {
+	height: 30px;
+}
+
+#submitSearch {
+	height: 30px;
+	width: 100px;
+	margin-top: 25px;
+}
+
+#submitSearch:hover {
+	background-color: rgb(240, 240, 240);
+	cursor: pointer;
+}
+
+/* For tablet screens & larger. */
+@media only screen and (min-width: 650px) {
+	#searchForm {
+		width: 45%;
+		height: 200px;
+	}
+}

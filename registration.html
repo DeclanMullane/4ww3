@@ -4,47 +4,71 @@
 
 <head>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Sign Up</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="regCSS.css" />
 
 </head>
 
-<body onload="search()">
+<body>
 
-	<header>Some Website</header>
-
-
-	<!-- Want it to be below header but then at top upon scroll -->
-	<div id="navBar">
-		<a class="navItem" href="search.html">Search</a>
-		<a class="navItem" href="submission.html">Submit</a>
-		<a class="navItem selected" href="registration.html">Register</a>
-		<a class="navItem" href="results_sample.html">Temporary</a>
-		<div id="test" class="navItem">
-			<input id="searchBar" type="text" placeholder="Search..." />
-			<button id="submit" onclick="myFunc()">Submit</button>
+	<header>
+		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
+		<div id="navBar">
+			<a class="navItem selected" href="registration.html">Sign-Up</a>
+			<a class="navItem">Sign-In</a>
+			<a class="navItem" href="submission.html">Submit</a>
+			<a class="navItem" href="search.html">Search</a>
+			<div id="test" class="navItem">
+				<input id="searchBar" type="text" placeholder="Search..." />
+				<button id="submit" onclick="myFunc()">Submit</button>
+			</div>
 		</div>
-	</div>
+	</header>
+	
+	<form id="signUp">
+		<div>
+			<label>Enter Your Email:</label>
+			<br />
+			<input type="email" required placeholder="Your email" />*
+		</div>
+		<br />
+		<br />
+		<div>
+			<label>Create a Password:</label>
+			<br />
+			<input type="password" required placeholder="Your password" />*
+		</div>
+		<br />
+		<br />
+		<div>
+			<label>Enter Your Name:</label>
+			<br />
+			<input type="text" required placeholder="First" />*
+			<input type="text" placeholder="Last" />
+		</div>
+		<br />
+		<br />
+		<div>
+			<label>Select Your Pronouns: </label>
+			<br />
+			<select name="gender">
+				<option value="They">They/Them/Theirs</option>
+				<option vlaue="She">She/Her/Hers</option>
+				<option vlaue="He">He/Him/His</option>
+			</select>
+		</div>
+		<br />
+		<p>Please fill out all required (*) fields!</p>
+		<input type="submit" value="Submit" id="submitReg" />
+	</form>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec nisi ut tortor porta sollicitudin sit amet et diam. In vel gravida lacus. Curabitur maximus ligula ac sodales ultrices. Phasellus et consequat lectus. Cras bibendum mauris et lacus faucibus dignissim. Vivamus euismod leo nec commodo tincidunt. Aenean sed tortor et erat vestibulum facilisis vel vitae ex. In rutrum nunc et dapibus aliquam. Ut blandit interdum velit, a varius eros ultricies ac. Proin purus felis, consectetur eget libero nec, fringilla condimentum neque. Nunc varius felis ut eros consectetur ullamcorper.</p>
+	<footer>
+		<hr />
 
-<p>Etiam et erat iaculis, pretium justo quis, ultrices mauris. Mauris eget risus vitae lectus aliquet finibus eu quis elit. Phasellus non malesuada ligula. Donec quis lectus mollis, congue arcu luctus, varius orci. Duis mollis magna eget est rutrum, a facilisis ex lobortis. Vestibulum neque massa, auctor et fringilla sed, vestibulum in elit. Sed imperdiet tincidunt nibh, vel rhoncus massa auctor non. Mauris vel interdum est. Nulla pulvinar sapien ante, non suscipit lectus lacinia nec. Suspendisse et nisi sed ex ultrices rutrum eget lacinia quam. Donec interdum, lacus vel auctor pretium, felis lectus pellentesque libero, eget pharetra nunc enim nec nisl. Sed porttitor velit ac turpis placerat viverra. Duis at varius nibh. Ut sed arcu dui. Donec aliquam augue eu ante tristique, sit amet dictum orci bibendum.</p>
-
-<p>Integer fermentum tortor eu lobortis tincidunt. Cras tempor viverra massa, sit amet mollis lacus blandit eget. Quisque pretium, elit vitae imperdiet aliquet, turpis magna porttitor ex, eleifend iaculis magna nisl sed ante. Donec tincidunt odio id dolor facilisis bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus placerat mi ac dignissim commodo. Morbi a mollis eros, id tempus ante. Vivamus nec tortor viverra, rutrum lorem vitae, feugiat massa. Aliquam sagittis rhoncus risus, ac feugiat ante bibendum et. Ut scelerisque, ex eget tincidunt efficitur, massa augue commodo ex, vitae commodo ligula enim non leo. Nullam lobortis lacus nisi, quis cursus arcu ultrices id. Vivamus vulputate imperdiet arcu quis tempor.</p>
-
-<p>In sit amet lacus vitae mauris eleifend pulvinar vitae sit amet ipsum. Duis blandit eget odio eget semper. Cras nec lorem ultrices mi gravida ultrices. Cras nisi metus, ultrices rutrum vehicula vel, commodo et lectus. Ut consectetur metus eu porttitor mollis. Cras ullamcorper, nunc sit amet gravida hendrerit, turpis ante pellentesque purus, in cursus nunc ex id leo. Proin nec risus non mi bibendum sollicitudin. Nunc leo risus, feugiat ut venenatis a, consectetur ac ante. Sed velit diam, molestie nec felis vitae, varius tempus mauris. Nulla iaculis eleifend orci quis rhoncus. Nunc a risus sed velit ornare laoreet ut at felis.</p>
-
-<p>Nam eleifend erat vel pharetra scelerisque. Pellentesque placerat mi nec odio sagittis, et aliquet tortor faucibus. Donec auctor, sem a commodo luctus, arcu tortor laoreet erat, a eleifend dolor nisi sed diam. Suspendisse nec ligula ligula. In blandit nisi nec quam consequat consectetur. In ac lectus vel magna suscipit rutrum eu ac ligula. Curabitur bibendum orci non libero vulputate, venenatis fringilla magna placerat. Fusce faucibus, quam ut sagittis pellentesque, lorem ipsum consectetur tortor, id cursus ligula tellus id ante.</p>
-
-	<p>Nam eleifend erat vel pharetra scelerisque. Pellentesque placerat mi nec odio sagittis, et aliquet tortor faucibus. Donec auctor, sem a commodo luctus, arcu tortor laoreet erat, a eleifend dolor nisi sed diam. Suspendisse nec ligula ligula. In blandit nisi nec quam consequat consectetur. In ac lectus vel magna suscipit rutrum eu ac ligula. Curabitur bibendum orci non libero vulputate, venenatis fringilla magna placerat. Fusce faucibus, quam ut sagittis pellentesque, lorem ipsum consectetur tortor, id cursus ligula tellus id ante.</p>
-
-	<p>Nam eleifend erat vel pharetra scelerisque. Pellentesque placerat mi nec odio sagittis, et aliquet tortor faucibus. Donec auctor, sem a commodo luctus, arcu tortor laoreet erat, a eleifend dolor nisi sed diam. Suspendisse nec ligula ligula. In blandit nisi nec quam consequat consectetur. In ac lectus vel magna suscipit rutrum eu ac ligula. Curabitur bibendum orci non libero vulputate, venenatis fringilla magna placerat. Fusce faucibus, quam ut sagittis pellentesque, lorem ipsum consectetur tortor, id cursus ligula tellus id ante.</p>
-
-	<p>Nam eleifend erat vel pharetra scelerisque. Pellentesque placerat mi nec odio sagittis, et aliquet tortor faucibus. Donec auctor, sem a commodo luctus, arcu tortor laoreet erat, a eleifend dolor nisi sed diam. Suspendisse nec ligula ligula. In blandit nisi nec quam consequat consectetur. In ac lectus vel magna suscipit rutrum eu ac ligula. Curabitur bibendum orci non libero vulputate, venenatis fringilla magna placerat. Fusce faucibus, quam ut sagittis pellentesque, lorem ipsum consectetur tortor, id cursus ligula tellus id ante.</p>
-
-	<p>Nam eleifend erat vel pharetra scelerisque. Pellentesque placerat mi nec odio sagittis, et aliquet tortor faucibus. Donec auctor, sem a commodo luctus, arcu tortor laoreet erat, a eleifend dolor nisi sed diam. Suspendisse nec ligula ligula. In blandit nisi nec quam consequat consectetur. In ac lectus vel magna suscipit rutrum eu ac ligula. Curabitur bibendum orci non libero vulputate, venenatis fringilla magna placerat. Fusce faucibus, quam ut sagittis pellentesque, lorem ipsum consectetur tortor, id cursus ligula tellus id ante.</p>
-
-	<footer>A footer</footer>
+		<a href="">Sitemap</a>  |  Published: date  |  Author: Declan Mullane
+	</footer>
 
 </body>
 

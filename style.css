@@ -1,57 +1,81 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	font-family: sans-serif;
 }
 
-header, footer {
+header {
 	text-align: center;
-	font-size: 25px;
-	color: white;
-	background-color: black;
-	font-family: sans-serif;
+	font-size: 20px;
+	color: #ADADAD;
 	width: 100%;
-	padding: 20px 0px;
+	padding: 15px 0px;
+	margin-bottom:15px;
+	background-color: #2E1114;
 }
 
 footer {
-	position: relative;
-	bottom: 0px;
+	color: #ADADAD;
+	text-align: left;
+	font-size: 15px;
+	padding: 15px 100px;
 }
 
-div#navBar {
+footer > a {
+	text-decoration: none;
+	color: #ADADAD;
+}
+
+hr {
+	background-color: #ADADAD;
+	height: 2px;
+	opacity: .5;
+	border: 0px;
+}
+
+#siteLogo {
+	max-width: 200px;
+}
+
+#navBar {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
-	background-color: darkgrey;
-	color: white;
+	background-color: #64485C;
+	color: #ADADAD;
+	font-weight: bold;
+}
+
+#navBar > a {
+	color: #ADADAD;
 }
 
 .selected {
-	background-color: lightgrey;
-	border-left: darkgrey solid 1px;
-	border-right: darkgrey solid 1px;
+	background-color: #83677B;
+	border-left: #2E1114 solid 1px;
+	border-right: #2E1114 solid 1px;
 } 
 
 .navItem {
 	color: black;
-	width: 12%;
-	padding: 15px 0px;
-	font-size: 20px;
+	width: 17%;
+	padding: 20px 0px;
+	font-size: 18px;
 	text-decoration: none;
 }
 
 .navItem:hover {
-	background-color: lightgrey;
+	background-color: #83677B;
 }
 
 #test {
 	margin-left: auto;
-	width: 25%;
+	width: 30%;
 }
 
 #test:hover {
-	background-color: darkgrey;
+	background-color: #64485C;
 }
 
 #searchBar {
@@ -60,4 +84,18 @@ div#navBar {
 
 #submit:hover {
 	background-color: white;
+}
+
+@media only screen and (min-width: 650px) {
+	.navItem {
+		color: black;
+		width: 12%;
+		padding: 20px 0px;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	#test {
+		width: 25%;
+	}
 }

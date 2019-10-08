@@ -4,8 +4,10 @@
 
 <head>
 
-	<title>Search Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="searchCSS.css" />
 	<script src="script.js"></script>
 	<base>
 
@@ -13,22 +15,55 @@
 
 <body onload="search()">
 
-	<header>Some Website</header>
+	<header>
+		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
+		<div id="navBar">
+			<a class="navItem" href="registration.html">Sign-Up</a>
+			<a class="navItem">Sign-In</a>
+			<a class="navItem" href="submission.html">Submit</a>
+			<a class="navItem selected" href="search.html">Search</a>
+			<div id="test" class="navItem">
+				<input id="searchBar" type="text" placeholder="Search..." />
+				<button id="submit" onclick="myFunc()">Submit</button>
+			</div>
+		</div>
+	</header>
 
-	<div id="navBar">
-		<a class="navItem selected" href="search.html">Search</a>
-		<a class="navItem" href="submission.html">Submit</a>
-		<a class="navItem" href="registration.html">Register</a>
-		<a class="navItem" href="results_sample.html">Temporary</a>
-		<form action="results_sample.html" id="test" class="navItem">
-			<input id="searchBar" type="text" placeholder="Search..." />
-			<button id="submit">Submit</button>
-		</form>
-	</div>
+	<form id="searchForm" action="results_sample.html">
 
+<!-- Search venues by their rating. -->
+		<div id="searchElements">
+			<div id="ratingContainer">
+				<label id="ratingLabel">Search by rating:</label>
+				<br />
+				<br />
+				<select id="ratingFilter" name="rating">
+					<option value="1">1 Star & Up</option>
+					<option value="2">2 Stars & Up</option>
+					<option value="3">3 Stars & Up</option>
+					<option value="4">4 Stars & Up</option>
+					<option value="5">5 Stars</option>
+				</select>
+			</div>
 
+<!-- Main search bar, search via name of venues. -->
+			<div id="searchContainer">
+				<label id="nameLabel">Search by name:</label>
+				<br />
+				<br />
+				<input id="mainSearch" type="search" name="q" placeholder="Search..." />
+			</div>
+		</div>
 
-	<footer>A footer</footer>
+<!-- Button for submitting form data. -->
+		<input type="submit" value="Submit" id="submitSearch" />
+	</form>
+
+	<footer>
+		<hr />
+
+		<a href="">Sitemap</a>  |  Published: date  |  Author: Declan Mullane
+	</footer>
 
 </body>
 

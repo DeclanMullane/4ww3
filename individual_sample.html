@@ -4,6 +4,7 @@
 
 <head>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>View Result</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -11,20 +12,25 @@
 
 <body onload="search()">
 
-	<header>Some Website</header>
-
-	<div id="navBar">
-		<a class="navItem" href="search.html">Search</a>
-		<a class="navItem" href="submission.html">Submit</a>
-		<a class="navItem" href="registration.html">Register</a>
-		<a class="navItem" href="results_sample.html">Temporary</a>
-		<div id="test" class="navItem">
-			<input id="searchBar" type="text" placeholder="Search..." />
-			<button id="submit" onclick="myFunc()">Submit</button>
+	<header>
+		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
+		<div id="navBar">
+			<a class="navItem" href="registration.html">Sign-Up</a>
+			<a class="navItem">Sign-In</a>
+			<a class="navItem" href="submission.html">Submit</a>
+			<a class="navItem" href="search.html">Search</a>
+			<div id="test" class="navItem">
+				<input id="searchBar" type="text" placeholder="Search..." />
+				<button id="submit" onclick="myFunc()">Submit</button>
+			</div>
 		</div>
-	</div>
+	</header>
 
-	<footer>A footer</footer>
+	<footer>
+		<hr />
+
+		<a href="">Sitemap</a>  |  Published: date  |  Author: Declan Mullane
+	</footer>
 
 </body>
 
