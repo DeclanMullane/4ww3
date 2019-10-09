@@ -18,6 +18,10 @@
 	padding-top: 10px;
 }
 
+.searchItem:last-child {
+	border: none;
+}
+
 .itemName {
 	font-size: 20px; 
 	text-decoration: underline;

@@ -1,0 +1,55 @@
+section {
+	width: 75%;
+	border: 1px solid rgba(225, 225, 225, 1);
+	box-shadow: 0px 10px 30px #ADADAD;
+	padding: 25px;
+	margin: auto;
+}
+
+#cafeDetails {
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(225, 225, 225, 1);
+}
+
+#cafeName {
+	color: rgb(145, 145, 145);
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+#rating {
+	font-weight: bold;
+}
+
+#cafeLocation {
+	display: block;
+	clear: both;
+	width: 90%;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+.review {
+	border-bottom: 1px solid rgba(225, 225, 225, 1);
+}
+
+.review:last-child {
+	border: none;
+}
+
+.user {
+	font-weight: bold;
+}
+
+
+@media only screen and (min-width: 650px) {
+	#cafeLocation {
+		display: block;
+		float: right;
+		max-width: 35%;
+	}
+}

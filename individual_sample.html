@@ -7,11 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>View Result</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="indSampStyle.css" />
 
 </head>
 
 <body>
 
+<!-- Header for whole site. Includes site logo at top and a nav bar; the nav bar includes links for registration and log-in (currently not implemented), submission of a new object (cafe in this case), and search, as well as a quick search by name of object (cafe). -->
 	<header>
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
 		<div id="navBar">
@@ -19,13 +21,49 @@
 			<a class="navItem">Sign-In</a>
 			<a class="navItem" href="submission.html">Submit</a>
 			<a class="navItem" href="search.html">Search</a>
-			<form id="navSearch" class="navItem">
+			<form id="navSearch" class="navItem" action="results_sample.html">
 				<input id="searchBar" type="text" placeholder="Search..." />
 				<input type="submit" value="Submit" />
 			</form>
 		</div>
 	</header>
 
+	<section>
+
+		<div id="cafeDetails">
+			<img id="cafeLocation" src="indMap.png" alt="Cafe Location on Map" />
+			<h1 id="cafeName">Williams Fresh Cafe</h1>
+			<p id="rating">Average Rating: 3.9 / 5</p>
+			<p id="cafeDescription">
+				<h2>Cafe Description</h2>
+				From Williams Fresh Cafe's Website: 
+				<blockquote cite="willaimsfreshcafe.com/our-story/">"Williams Fresh Café is your all-day, every day café for delicious food and signature drinks made-to-order from real, fresh ingredients and served to your table with a real smile. Our cafés offer a stylish yet casual setting, each with its own local flavour."</blockquote>
+			</p>
+		</div>
+		<h2>User Reviews</h2>
+		<div class="review">
+			<p class="user">Greg</p>
+			<p class="userRating">3.5 / 5</p>
+			<p class="reviewDetails">Williams was okay. Friendly staff, pricey food though.</p>
+		</div>
+		<div class="review">
+			<p class="user">Annalise</p>
+			<p class="userRating">4.5 / 5</p>
+			<p class="reviewDetails">I had a good time at Williams Fresh Cafe. Clean place, good food. Music was weird, though.</p>
+		</div>
+		<div class="review">
+			<p class="user">Su-Yun</p>
+			<p class="userRating">5 / 5</p>
+			<p class="reviewDetails">Loved Williams! Awesome food!</p>
+		</div>
+		<div class="review">
+			<p class="user">Alex</p>
+			<p class="userRating">2.5 / 5</p>
+			<p class="reviewDetails">Average. Not worth the price.</p>
+		</div>
+	</section>
+
+<!-- Footer contains link to sitemap, as well as details on publishing date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 

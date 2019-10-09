@@ -13,6 +13,7 @@
 
 <body>
 
+<!-- Header for whole site. Includes site logo at top and a nav bar; the nav bar includes links for registration and log-in (currently not implemented), submission of a new object (cafe in this case), and search, as well as a quick search by name of object (cafe). -->
 	<header>
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
 		<div id="navBar">
@@ -27,29 +28,27 @@
 		</div>
 	</header>
 	
+<!-- Form for new user registration. Asks for the new user's email, password, first and last names, and pronouns. Required fields utilize the required attribute as part of the code to prevent form submission missing necessary data. -->
 	<form id="signUp">
 		<h2>Sign Up for Coffee Connect:</h2>
 		<div>
 			<label>Enter Your Email:</label>
 			<br />
-			<input type="email" required placeholder="Your email" />*
+			<input type="email" required placeholder="Your email*" />
 		</div>
-		<br />
 		<br />
 		<div>
 			<label>Create a Password:</label>
 			<br />
-			<input type="password" required placeholder="Your password" />*
+			<input type="password" required placeholder="Your password*" />
 		</div>
-		<br />
 		<br />
 		<div>
 			<label>Enter Your Name:</label>
 			<br />
-			<input type="text" required placeholder="First" />*
+			<input type="text" required placeholder="First*" />
 			<input type="text" placeholder="Last" />
 		</div>
-		<br />
 		<br />
 		<div>
 			<label>Select Your Pronouns: </label>
@@ -64,6 +63,8 @@
 		<p>Please fill out all required (*) fields!</p>
 		<input type="submit" value="Submit" id="submitReg" />
 	</form>
+
+<!-- Footer contains link to sitemap, as well as details on publishing date and author of page, in absence of a form of copywrite. -->
 
 	<footer>
 		<hr />

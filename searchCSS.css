@@ -8,10 +8,8 @@
 
 #searchForm {
 	text-align: center;
-	padding: 25px 0px;
+	padding: 25px 40px;
 	margin: auto;
-	width: 90%;
-	min-height: 200px;
 	border: 1px solid rgba(225, 225, 225, 1);
 	box-shadow: 0px 10px 30px #ADADAD;
 }
@@ -19,11 +17,6 @@
 #searchElements {
 	display: flex;
 	justify-content: space-around;
-}
-
-#ratingContainer, #searchContainer {
-	padding: 20px;
-	width: 200px;
 }
 
 #ratingFilter {
@@ -44,7 +37,6 @@
 /* For tablet screens & larger. */
 @media only screen and (min-width: 650px) {
 	#searchForm {
-		width: 45%;
-		min-height: 200px;
+		width: 35%;
 	}
 }
