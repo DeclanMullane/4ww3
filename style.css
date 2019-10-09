@@ -2,12 +2,12 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: sans-serif;
+	color: #ADADAD;
 }
 
 header {
 	text-align: center;
 	font-size: 20px;
-	color: #ADADAD;
 	width: 100%;
 	padding: 15px 0px;
 	margin-bottom:15px;
@@ -15,7 +15,6 @@ header {
 }
 
 footer {
-	color: #ADADAD;
 	text-align: left;
 	font-size: 15px;
 	padding: 15px 100px;
@@ -69,12 +68,12 @@ hr {
 	background-color: #83677B;
 }
 
-#test {
+#navSearch {
 	margin-left: auto;
 	width: 30%;
 }
 
-#test:hover {
+#navSearch:hover {
 	background-color: #64485C;
 }
 
@@ -82,10 +81,11 @@ hr {
 	width: 50%;
 }
 
-#submit:hover {
+#navSub:hover {
 	background-color: white;
 }
 
+/* For larger screens, change width of navbar elements. */
 @media only screen and (min-width: 650px) {
 	.navItem {
 		color: black;

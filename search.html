@@ -5,15 +5,14 @@
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Home</title>
+	<title>Search</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="searchCSS.css" />
-	<script src="script.js"></script>
 	<base>
 
 </head>
 
-<body onload="search()">
+<body>
 
 	<header>
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
@@ -22,14 +21,15 @@
 			<a class="navItem">Sign-In</a>
 			<a class="navItem" href="submission.html">Submit</a>
 			<a class="navItem selected" href="search.html">Search</a>
-			<div id="test" class="navItem">
+			<form id="navSearch" class="navItem">
 				<input id="searchBar" type="text" placeholder="Search..." />
-				<button id="submit" onclick="myFunc()">Submit</button>
-			</div>
+				<input type="submit" value="Submit" />
+			</form>
 		</div>
 	</header>
 
 	<form id="searchForm" action="results_sample.html">
+		<h2>Search for Cafes:</h2>
 
 <!-- Search venues by their rating. -->
 		<div id="searchElements">

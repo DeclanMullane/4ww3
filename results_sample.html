@@ -7,10 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Search Results</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="resSampStyle.css" />
 
 </head>
 
-<body onload="search()">
+<body>
 
 	<header>
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
@@ -19,40 +20,40 @@
 			<a class="navItem">Sign-In</a>
 			<a class="navItem" href="submission.html">Submit</a>
 			<a class="navItem" href="search.html">Search</a>
-			<div id="test" class="navItem">
+			<form id="navSearch" class="navItem">
 				<input id="searchBar" type="text" placeholder="Search..." />
-				<button id="submit" onclick="myFunc()">Submit</button>
-			</div>
+				<input type="submit" value="Submit" />
+			</form>
 		</div>
 	</header>
 
-<!-- Want to implement filters, such as for price, on the results page to further narrow search results. Text search field and rating search option will remain displayed. -->
+	<div id="container">
+		<!-- Section defined for displaying search results in a tabular format.  -->
+		<section id="searchResults">
+			<h2></h2>
 
-<!-- Add back search bar here. -->
+			<div class="searchItem">
+				<a class="itemName" href="individual_sample.html">Williams Fresh Cafe</a>
+				<p class="rating">Rating: 3.9</p>
+			</div>
 
-<!-- Filters go here -->
+			<div class="searchItem">
+				<a class="itemName">Starbucks</a>
+				<p class="rating">Rating: 4.3</p>
+			</div>
 
-<!-- Section defined for displaying search results in a tabular format.  -->
-	<section id="searchResults">
-		<h1>Showing 1 through <span id="numResOnPage">x</span> of <span id="totalNumRes">y</span> items.</h1>
-
-		<div class="searchItem">
-			<img src="" />
-			<p class="itemDesc">This is an item.</p>
-		</div>
-
-		<div class="searchItem">
-			<img src="" />
-			<p class="itemDesc">This is an item.</p>
-		</div>
-
-		<div class="searchItem">
-			<img src="" />
-			<p class="itemDesc">This is an item.</p>
-		</div>
-	</section>
+			<div class="searchItem">
+				<a class="itemName">Second Cup</a>
+				<p class="rating">Rating: 4.2</p>
+			</div>
+		</section>
 
 <!-- Section defined for displaying search results in a map object. -->
+
+		<section id="searchMap">
+			<img id="map" src="map.png" alt="Map of Search Results" />
+		</section>
+	</div> 
 
 	<footer>
 		<hr />

@@ -10,6 +10,10 @@
 	margin: auto;
 }
 
+#signUp > div > input {
+	padding: 5px 0px;
+}
+
 #submitReg {
 	height: 30px;
 	width: 100px;

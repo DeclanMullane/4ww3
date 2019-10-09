@@ -10,7 +10,7 @@
 
 </head>
 
-<body onload="search()">
+<body>
 
 	<header>
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
@@ -19,10 +19,10 @@
 			<a class="navItem">Sign-In</a>
 			<a class="navItem" href="submission.html">Submit</a>
 			<a class="navItem" href="search.html">Search</a>
-			<div id="test" class="navItem">
+			<form id="navSearch" class="navItem">
 				<input id="searchBar" type="text" placeholder="Search..." />
-				<button id="submit" onclick="myFunc()">Submit</button>
-			</div>
+				<input type="submit" value="Submit" />
+			</form>
 		</div>
 	</header>
 

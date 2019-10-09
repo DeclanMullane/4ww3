@@ -5,12 +5,13 @@
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Rate</title>
+	<title>Submit</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="subCSS.css" />
 
 </head>
 
-<body onload="search()">
+<body>
 
 	<header>
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
@@ -19,12 +20,30 @@
 			<a class="navItem">Sign-In</a>
 			<a class="navItem selected" href="submission.html">Submit</a>
 			<a class="navItem" href="search.html">Search</a>
-			<div id="test" class="navItem">
+			<form id="navSearch" class="navItem">
 				<input id="searchBar" type="text" placeholder="Search..." />
-				<button id="submit" onclick="myFunc()">Submit</button>
-			</div>
+				<input type="submit" value="Submit" />
+			</form>
 		</div>
 	</header>
+
+	<form id="newSubmission">
+		<h2>Submit New Cafe:</h2>
+		<div class="subContainer">
+			<input class="leftElem" type="text" placeholder="Name of Cafe" required />
+			<input id="cafeImg" type="file" name="cafeImg" />
+		</div>
+		<br />
+		<div class="subContainer">
+			<input class="leftElem" type="number" placeholder="Latitude" required />
+			<input type="number" placeholder="Longitude" required />
+		</div>
+		<br />
+		<textarea id="description" name="desc" placeholder="Description" required></textarea>
+		<br />
+		<br />
+		<input id="subSubmit" type="submit" value="Submit" />
+	</form>
 
 	<footer>
 		<hr />
