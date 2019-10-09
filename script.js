@@ -9,5 +9,5 @@ function search() {
 }
 
 function myFunc() {
-	window.open("results_sample.html", "_self");
+	window.open("registration.html", "_self");
 }
