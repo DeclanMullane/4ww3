@@ -1,5 +1,10 @@
 /* CSS for sample results page. */
 
+h2 {
+	color: rgb(145, 145, 145);
+	font-size: 25px;
+}
+
 #container {
 	width: 75%;
 	border: 1px solid rgba(225, 225, 225, 1);

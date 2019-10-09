@@ -4,11 +4,14 @@
 
 <head>
 
+<!-- Meta defines viewport for smaller devices to increase compatibility with smaller screens; defines character set. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+<!-- Title of page. -->
 	<title>Search</title>
+<!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="searchCSS.css" />
-	<base>
 
 </head>
 
@@ -19,25 +22,29 @@
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
 		<div id="navBar">
 			<a class="navItem" href="registration.html">Sign-Up</a>
+			<!-- Currently broken link; will use for user log-in later. -->
 			<a class="navItem">Sign-In</a>
 			<a class="navItem" href="submission.html">Submit</a>
 			<a class="navItem selected" href="search.html">Search</a>
-			<form id="navSearch" class="navItem">
+			<!-- Smaller form for quick search in navbar. -->
+			<form id="navSearch" class="navItem" action="results_sample.html">
 				<input id="searchBar" type="text" placeholder="Search..." />
 				<input type="submit" value="Submit" />
 			</form>
 		</div>
 	</header>
 
+<!-- Form for collecting user's search inputs to filter geographic objects (cafe's in this case). Includes search by rating and by object (cafe) name. -->
 	<form id="searchForm" action="results_sample.html">
 		<h2>Search for Cafes:</h2>
 
-<!-- Search venues by their rating. -->
+<!-- Search venues by their rating, uses select element for creation of a dropdown menu. -->
 		<div id="searchElements">
 			<div id="ratingContainer">
 				<label id="ratingLabel">Search by rating:</label>
 				<br />
 				<br />
+				<!-- Select options for searching cafes by rating. -->
 				<select id="ratingFilter" name="rating">
 					<option value="1">1 Star & Up</option>
 					<option value="2">2 Stars & Up</option>
@@ -47,7 +54,7 @@
 				</select>
 			</div>
 
-<!-- Main search bar, search via name of venues. -->
+<!-- Main search bar, search via name of venues. Uses input type search to specify search text field. -->
 			<div id="searchContainer">
 				<label id="nameLabel">Search by name:</label>
 				<br />
@@ -60,11 +67,11 @@
 		<input type="submit" value="Submit" id="submitSearch" />
 	</form>
 
-<!-- Footer contains link to sitemap, as well as details on publishing date and author of page, in absence of a form of copywrite. -->
+<!-- Footer will contain link to sitemap, currently contains details on publishing date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 
-		<a href="">Sitemap</a>  |  Published: date  |  Author: Declan Mullane
+		Author: Declan Mullane  |  Published: October 9th, 2019
 	</footer>
 
 </body>

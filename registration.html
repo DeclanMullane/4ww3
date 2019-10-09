@@ -4,8 +4,12 @@
 
 <head>
 
+<!-- Meta defines viewport for smaller devices to increase compatibility with smaller screens; defines character set. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+<!-- Title of page. -->
 	<title>Sign Up</title>
+<!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="regCSS.css" />
 
@@ -18,10 +22,12 @@
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
 		<div id="navBar">
 			<a class="navItem selected" href="registration.html">Sign-Up</a>
+			<!-- Currently broken link; will use for user log-in later. -->
 			<a class="navItem">Sign-In</a>
 			<a class="navItem" href="submission.html">Submit</a>
 			<a class="navItem" href="search.html">Search</a>
-			<form id="navSearch" class="navItem">
+			<!-- Smaller form for quick search in navbar. -->
+			<form id="navSearch" class="navItem" action="results_sample.html">
 				<input id="searchBar" type="text" placeholder="Search..." />
 				<input type="submit" value="Submit" />
 			</form>
@@ -31,18 +37,21 @@
 <!-- Form for new user registration. Asks for the new user's email, password, first and last names, and pronouns. Required fields utilize the required attribute as part of the code to prevent form submission missing necessary data. -->
 	<form id="signUp">
 		<h2>Sign Up for Coffee Connect:</h2>
+		<!-- Email input field; will use email as username for login. -->
 		<div>
 			<label>Enter Your Email:</label>
 			<br />
 			<input type="email" required placeholder="Your email*" />
 		</div>
 		<br />
+		<!-- Password input field. -->
 		<div>
 			<label>Create a Password:</label>
 			<br />
 			<input type="password" required placeholder="Your password*" />
 		</div>
 		<br />
+		<!-- Name input fields. -->
 		<div>
 			<label>Enter Your Name:</label>
 			<br />
@@ -50,26 +59,27 @@
 			<input type="text" placeholder="Last" />
 		</div>
 		<br />
+		<!-- Label and select input field for pronouns. -->
 		<div>
 			<label>Select Your Pronouns: </label>
 			<br />
 			<select name="gender">
-				<option value="They">They/Them/Theirs</option>
-				<option vlaue="She">She/Her/Hers</option>
-				<option vlaue="He">He/Him/His</option>
+				<option>They/Them/Theirs</option>
+				<option>She/Her/Hers</option>
+				<option>He/Him/His</option>
 			</select>
 		</div>
 		<br />
 		<p>Please fill out all required (*) fields!</p>
+		<!-- Submit button for registration form. -->
 		<input type="submit" value="Submit" id="submitReg" />
 	</form>
 
-<!-- Footer contains link to sitemap, as well as details on publishing date and author of page, in absence of a form of copywrite. -->
-
+<!-- Footer will contain link to sitemap, currently contains details on publishing date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 
-		<a href="">Sitemap</a>  |  Published: date  |  Author: Declan Mullane
+		Author: Declan Mullane  |  Published: October 9th, 2019
 	</footer>
 
 </body>

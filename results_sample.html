@@ -4,8 +4,12 @@
 
 <head>
 
+<!-- Meta defines viewport for smaller devices to increase compatibility with smaller screens; defines character set. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+<!-- Title of page. -->
 	<title>Search Results</title>
+<!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="resSampStyle.css" />
 
@@ -18,10 +22,12 @@
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
 		<div id="navBar">
 			<a class="navItem" href="registration.html">Sign-Up</a>
+			<!-- Currently broken link; will use for user log-in later. -->
 			<a class="navItem">Sign-In</a>
 			<a class="navItem" href="submission.html">Submit</a>
 			<a class="navItem" href="search.html">Search</a>
-			<form id="navSearch" class="navItem">
+			<!-- Smaller form for quick search in navbar. -->
+			<form id="navSearch" class="navItem" action="results_sample.html">
 				<input id="searchBar" type="text" placeholder="Search..." />
 				<input type="submit" value="Submit" />
 			</form>
@@ -29,10 +35,10 @@
 	</header>
 
 	<div id="container">
-		<!-- Section defined for displaying search results in a tabular format.  -->
+		<!-- Section defined for displaying search results in a tabular format. I chose not to literally use a table, as I didn't think it added anything to the formatting or presentation of results. Want to implement images in the search results later, as well as create filters to allow the user to display results based on rating or by proximity. -->
 		<section id="searchResults">
-			<h2></h2>
-
+			<h2>Select a Cafe:</h2>
+			<!-- Div class="searchItem" defines the class of the search results - each one will be a member of this class, and contain the name and rating of the cafe. -->
 			<div class="searchItem">
 				<a class="itemName" href="individual_sample.html">Williams Fresh Cafe</a>
 				<p class="rating">Rating: 3.9</p>
@@ -49,18 +55,18 @@
 			</div>
 		</section>
 
-<!-- Section defined for displaying search results in a map object. -->
+<!-- Section defined for displaying search results in a map object. Each cafe will be listed as a pin on the map. -->
 
-		<section id="searchMap">
+		<aside id="searchMap">
 			<img id="map" src="map.png" alt="Map of Search Results" />
-		</section>
+		</aside>
 	</div> 
 
-<!-- Footer contains link to sitemap, as well as details on publishing date and author of page, in absence of a form of copywrite. -->
+<!-- Footer will contain link to sitemap, currently contains details on publishing date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 
-		<a href="">Sitemap</a>  |  Published: date  |  Author: Declan Mullane
+		Author: Declan Mullane  |  Published: October 9th, 2019
 	</footer>
 
 </body>

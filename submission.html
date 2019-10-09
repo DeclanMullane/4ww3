@@ -4,8 +4,12 @@
 
 <head>
 
+<!-- Meta defines viewport for smaller devices to increase compatibility with smaller screens; defines character set. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+<!-- Title of page. -->
 	<title>Submit</title>
+<!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="subCSS.css" />
 
@@ -18,39 +22,46 @@
 		<img id="siteLogo" src="logo2.png" alt="Coffee Connect Logo" />
 		<div id="navBar">
 			<a class="navItem" href="registration.html">Sign-Up</a>
+			<!-- Currently broken link; will use for user log-in later. -->
 			<a class="navItem">Sign-In</a>
 			<a class="navItem selected" href="submission.html">Submit</a>
 			<a class="navItem" href="search.html">Search</a>
-			<form id="navSearch" class="navItem">
+			<!-- Smaller form for quick search in navbar. -->
+			<form id="navSearch" class="navItem" action="results_sample.html">
 				<input id="searchBar" type="text" placeholder="Search..." />
 				<input type="submit" value="Submit" />
 			</form>
 		</div>
 	</header>
 
+<!-- Form for submitting a new geographic object (in this case, a cafe). Includes fields for name, latitude and longitude, description, and an optional image field, as well as a submit button. -->
 	<form id="newSubmission">
 		<h2>Submit New Cafe:</h2>
+		<!-- Input fields for cafe name and an optional image for new submission. Image input utilizes file input type and the accept attribute to help prevent unwanted file inputs. -->
 		<div class="subContainer">
 			<input class="leftElem" type="text" placeholder="Name of Cafe*" required />
-			<input id="cafeImg" type="file" name="cafeImg" />
+			<input id="cafeImg" type="file" accept=".png, .jpg, .jpeg" name="cafeImg" />
 		</div>
 		<br />
+		<!-- Input fields for latitude and longitude coordinates for cafe location; utilizes number attribute to prevent unwanted input values. -->
 		<div class="subContainer">
 			<input class="leftElem" type="number" placeholder="Latitude*" required />
 			<input type="number" placeholder="Longitude*" required />
 		</div>
 		<br />
+		<!-- Input field for a cafe description of new cafe. -->
 		<textarea id="description" name="desc" placeholder="Description*" required></textarea>
 		<br />
 		<p>Please fill out all required (*) fields!</p>
+		<!-- Submit button for submission form. -->
 		<input id="subSubmit" type="submit" value="Submit" />
 	</form>
 
-<!-- Footer contains link to sitemap, as well as details on publishing date and author of page, in absence of a form of copywrite. -->
+<!-- Footer will contain link to sitemap, currently contains details on publishing date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 
-		<a href="">Sitemap</a>  |  Published: date  |  Author: Declan Mullane
+		Author: Declan Mullane  |  Published: October 9th, 2019
 	</footer>
 
 </body>
