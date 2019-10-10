@@ -1,5 +1,6 @@
 /* CSS for submission page. */
 
+/* Style the form for submission of new cafes. */
 #newSubmission {
 	width: 35%;
 	padding: 20px 40px 40px 40px;
@@ -8,19 +9,23 @@
 	box-shadow: 0px 10px 30px #ADADAD;
 }
 
+/* Space around container elements. */
 .subContainer > input {
 	padding: 5px 0px;
 }
 
+/* Space around contianer elements. */
 .leftElem {
 	margin-right: 15px;
 }
 
+/* Style submit button */
 #subSubmit {
 	height: 30px;
 	width: 100px;
 }
 
+/* Style description text box. */
 #description {
 	width: 100%;
 	min-height: 50px;

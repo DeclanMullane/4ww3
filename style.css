@@ -1,3 +1,6 @@
+/* Style sheet for elements present on all pages. */
+
+/* Bring page's contents to edge of screen; set font style and color for text elements on page. */
 body {
 	margin: 0px;
 	padding: 0px;
@@ -5,6 +8,7 @@ body {
 	color: #ADADAD;
 }
 
+/* Style elements in the header. */
 header {
 	text-align: center;
 	font-size: 20px;
@@ -14,17 +18,14 @@ header {
 	background-color: #2E1114;
 }
 
+/* Style elements in the footer. */
 footer {
 	text-align: left;
 	font-size: 15px;
 	padding: 15px 100px;
 }
 
-footer > a {
-	text-decoration: none;
-	color: #ADADAD;
-}
-
+/* Style all horizontal rule lines to give them a softer color and look. */
 hr {
 	background-color: #ADADAD;
 	height: 2px;
@@ -32,55 +33,63 @@ hr {
 	border: 0px;
 }
 
+/* Limit width of site logo. */
 #siteLogo {
 	max-width: 200px;
 }
 
+/* Style navigation bar. Align items with flex properties. */
 #navBar {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
 	background-color: #64485C;
-	color: #ADADAD;
 	font-weight: bold;
 }
 
+/* Set color of navigation links. */
 #navBar > a {
 	color: #ADADAD;
 }
 
+/* Highlight the current page if it's one of the nav bar links. */
 .selected {
 	background-color: #83677B;
 	border-left: #2E1114 solid 1px;
 	border-right: #2E1114 solid 1px;
 } 
 
+/* More styling of nav bar items. */
 .navItem {
-	color: black;
 	width: 17%;
 	padding: 20px 0px;
 	font-size: 18px;
 	text-decoration: none;
 }
 
+/* Change background of navbar item on hover. */
 .navItem:hover {
 	background-color: #83677B;
 }
 
+/* Move the navbar search box to the right of other elements. */
 #navSearch {
 	margin-left: auto;
 	width: 30%;
 }
 
+/* Prevent the search box from being highlighted on hover. */
 #navSearch:hover {
 	background-color: #64485C;
 }
 
+/* Restrict width of search box. */
 #searchBar {
 	width: 50%;
 }
 
+/* Provide hover feedback for submit button in navbar for navbar search box. */
 #navSub:hover {
 	background-color: white;
 }
@@ -93,9 +102,5 @@ hr {
 		padding: 20px 0px;
 		font-size: 20px;
 		text-decoration: none;
-	}
-
-	#test {
-		width: 25%;
 	}
 }

@@ -1,3 +1,6 @@
+/* CSS for the individual_sample page only. */
+
+/* Defines and styles the section holding the information for the individual sample. */
 section {
 	width: 75%;
 	border: 1px solid rgba(225, 225, 225, 1);
@@ -6,11 +9,13 @@ section {
 	margin: auto;
 }
 
+/*  */
 #cafeDetails {
 	padding-bottom: 15px;
 	border-bottom: 1px solid rgba(225, 225, 225, 1);
 }
 
+/* Styles the name of the cafe for emphasis. */
 #cafeName {
 	color: rgb(145, 145, 145);
 	text-decoration: underline;
@@ -19,33 +24,34 @@ section {
 	margin-bottom: 0px;
 }
 
-#rating {
+/* Makes bold the average rating and names of each user. */
+#rating, .user {
 	font-weight: bold;
 }
 
+/* For small screens, presents the map image outside of the text area for easier viewing. */
 #cafeLocation {
 	display: block;
 	clear: both;
 	width: 90%;
 }
 
+/* Emphasize the subheaders. */
 h2 {
 	text-decoration: underline;
 }
 
+/* Creates a separation between the reviews for easier readability. */
 .review {
 	border-bottom: 1px solid rgba(225, 225, 225, 1);
 }
 
+/* Gets rid of bottom border for last review for style consistency. */
 .review:last-child {
 	border: none;
 }
 
-.user {
-	font-weight: bold;
-}
-
-
+/* Changes the display of the map image to float right of the text (name, rating, and description of cafe) on larger screens. */
 @media only screen and (min-width: 650px) {
 	#cafeLocation {
 		display: block;

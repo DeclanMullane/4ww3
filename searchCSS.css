@@ -1,11 +1,12 @@
-/* CSS for search elements */
+/* CSS for search page */
 
-/* Mobile-friendly design. */
+/* Style text search bar on search page only. */
 #mainSearch {
 	height: 30px;
 	min-width: 175px;
 }
 
+/* Style the form for searching cafes. */
 #searchForm {
 	text-align: center;
 	padding: 25px 40px;
@@ -14,21 +15,25 @@
 	box-shadow: 0px 10px 30px #ADADAD;
 }
 
+/* Space elements of search form. */
 #searchElements {
 	display: flex;
 	justify-content: space-around;
 }
 
+/* Set height of rating drop down list. */
 #ratingFilter {
 	height: 30px;
 }
 
+/* Style submit button. */
 #submitSearch {
 	height: 30px;
 	width: 100px;
 	margin-top: 25px;
 }
 
+/* Style for feedback on hover of submit button. */
 #submitSearch:hover {
 	background-color: rgb(240, 240, 240);
 	cursor: pointer;

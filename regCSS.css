@@ -1,5 +1,6 @@
 /* CSS for registration page. */
 
+/* Styling for the form for registration. */
 #signUp {
 	display: flex;
 	flex-direction: column;
@@ -10,21 +11,25 @@
 	margin: auto;
 }
 
+/* Create some space between form elements. */
 #signUp > div > input {
 	padding: 5px 0px;
 }
 
+/* Style the submit button */
 #submitReg {
 	height: 30px;
 	width: 100px;
 	align-self: center;
 }
 
+/* Feedback on hover of submit button */
 #submitReg:hover {
 	background-color: rgb(240, 240, 240);
 	cursor: pointer;
 }
 
+/* Formatting for large screens (change width of form) */
 @media only screen and (min-width: 650px) {
 	#signUp {
 		width: 30%;
