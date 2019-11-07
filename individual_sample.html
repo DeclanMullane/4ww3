@@ -12,6 +12,8 @@
 <!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="indSampStyle.css" />
+	<script src="script2.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHcwA_ecfh5LdoYCPr03VZdPDkat7nVhs&callback=initMap" async defer></script>	
 
 </head>
 
@@ -38,8 +40,8 @@
 
 		<!-- Displays main details about the cafe, including name, map location (presented on an actual map), average rating, and description of the cafe. -->
 		<div id="cafeDetails">
-			<!-- Map displaying location pin for the cafe - not live on this demo. -->
-			<img id="cafeLocation" src="indMap.png" alt="Cafe Location on Map" />
+			<!-- Map displaying location pin for the cafe, brought to you by Google Maps API. -->
+			<div id="cafeLocation"></div>
 			<!-- Name of cafe. -->
 			<h1 id="cafeName">Williams Fresh Cafe</h1>
 			<!-- Average rating of the cafe, calculated from all user ratings (and rounded to the nearest tenth). -->

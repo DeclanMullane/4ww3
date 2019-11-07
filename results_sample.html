@@ -12,10 +12,12 @@
 <!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="resSampStyle.css" />
+	<script src="script1.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHcwA_ecfh5LdoYCPr03VZdPDkat7nVhs&callback=initMap" async defer></script>
 
 </head>
 
-<body>
+<body onload="openMap()">
 
 <!-- Header for whole site. Includes site logo at top and a nav bar; the nav bar includes links for registration and log-in (currently not implemented), submission of a new object (cafe in this case), and search, as well as a quick search by name of object (cafe). -->
 	<header>
@@ -58,15 +60,15 @@
 <!-- Section defined for displaying search results in a map object. Each cafe will be listed as a pin on the map. -->
 
 		<aside id="searchMap">
-			<img id="map" src="map.png" alt="Map of Search Results" />
+			<div id="map"></div>
 		</aside>
 	</div> 
 
-<!-- Footer will contain link to sitemap, currently contains details on publishing date and author of page, in absence of a form of copywrite. -->
+<!-- Footer will contain link to sitemap, currently contains details on last-updated-on date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 
-		Author: Declan Mullane  |  Published: October 9th, 2019
+		Author: Declan Mullane  |  Updated: November 6th, 2019
 	</footer>
 
 </body>

@@ -1,3 +1,5 @@
+<!-- Client-side form validation using Javascript --> 
+
 <!DOCTYPE html>
 
 <html>
@@ -12,6 +14,7 @@
 <!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="regCSS.css" />
+	<script src="script1.js"></script>
 
 </head>
 
@@ -35,28 +38,28 @@
 	</header>
 	
 <!-- Form for new user registration. Asks for the new user's email, password, first and last names, and pronouns. Required fields utilize the required attribute as part of the code to prevent form submission missing necessary data. -->
-	<form id="signUp">
+	<form id="signUp" onsubmit="return validateRegistration()">
 		<h2>Sign Up for Coffee Connect:</h2>
 		<!-- Email input field; will use email as username for login. -->
 		<div>
 			<label>Enter Your Email:</label>
 			<br />
-			<input type="email" required placeholder="Your email*" />
+			<input type="email" name="email" placeholder="Your email*" />
 		</div>
 		<br />
 		<!-- Password input field. -->
 		<div>
 			<label>Create a Password:</label>
 			<br />
-			<input type="password" required placeholder="Your password*" />
+			<input type="password" name="password" placeholder="Your password*" />
 		</div>
 		<br />
 		<!-- Name input fields. -->
 		<div>
 			<label>Enter Your Name:</label>
 			<br />
-			<input type="text" required placeholder="First*" />
-			<input type="text" placeholder="Last" />
+			<input type="text" name="fname" placeholder="First*" />
+			<input type="text" name="lname" placeholder="Last" />
 		</div>
 		<br />
 		<!-- Label and select input field for pronouns. -->
@@ -75,11 +78,11 @@
 		<input type="submit" value="Submit" id="submitReg" />
 	</form>
 
-<!-- Footer will contain link to sitemap, currently contains details on publishing date and author of page, in absence of a form of copywrite. -->
+<!-- Footer will contain link to sitemap, currently contains details on last-updated-on date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 
-		Author: Declan Mullane  |  Published: October 9th, 2019
+		Author: Declan Mullane  |  Updated: November 6th, 2019
 	</footer>
 
 </body>

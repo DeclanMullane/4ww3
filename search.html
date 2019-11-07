@@ -12,6 +12,7 @@
 <!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="searchCSS.css" />
+	<script src="script1.js"></script> 
 
 </head>
 
@@ -61,17 +62,25 @@
 				<br />
 				<input id="mainSearch" type="search" name="q" placeholder="Search..." />
 			</div>
+
+<!-- Button to allow users to search for nearby cafes via their location. -->
+			<div id="searchLocation">
+				<label id="locationLabel">Search by location:</label>
+				<br />
+				<br />
+				<input type="checkbox" id="locSearch" value="Search" onclick="searchByLocation()"></input>
+			</div>
 		</div>
 
 <!-- Button for submitting form data. -->
 		<input type="submit" value="Submit" id="submitSearch" />
 	</form>
 
-<!-- Footer will contain link to sitemap, currently contains details on publishing date and author of page, in absence of a form of copywrite. -->
+<!-- Footer will contain link to sitemap, currently contains details on last-updated-on date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 
-		Author: Declan Mullane  |  Published: October 9th, 2019
+		Author: Declan Mullane  |  Updated: November 6th, 2019
 	</footer>
 
 </body>

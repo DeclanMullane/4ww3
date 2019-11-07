@@ -1,3 +1,5 @@
+<!-- set location of object using geolocation api, validate form using html5 & css -->
+
 <!DOCTYPE html>
 
 <html>
@@ -12,6 +14,7 @@
 <!-- Links to style sheets, both general and specific to page. -->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="subCSS.css" />
+	<script src="script1.js"></script>
 
 </head>
 
@@ -45,8 +48,12 @@
 		<br />
 		<!-- Input fields for latitude and longitude coordinates for cafe location; utilizes number attribute to prevent unwanted input values. -->
 		<div class="subContainer">
-			<input class="leftElem" type="number" placeholder="Latitude*" required />
-			<input type="number" placeholder="Longitude*" required />
+			<input id="lat" class="leftElem" type="text" placeholder="Latitude*" required />
+			<input id="lng" type="text" placeholder="Longitude*" required />
+			<br />
+			<br />
+			<label>Click Checkbox to Use Current Location Instead</label>
+			<input type="checkbox" id="locationCheckbox" name="userLocation" value="Yes"  onclick="uploadLocation()" />
 		</div>
 		<br />
 		<!-- Input field for a cafe description of new cafe. -->
@@ -57,11 +64,11 @@
 		<input id="subSubmit" type="submit" value="Submit" />
 	</form>
 
-<!-- Footer will contain link to sitemap, currently contains details on publishing date and author of page, in absence of a form of copywrite. -->
+<!-- Footer will contain link to sitemap, currently contains details on last-updated-on date and author of page, in absence of a form of copywrite. -->
 	<footer>
 		<hr />
 
-		Author: Declan Mullane  |  Published: October 9th, 2019
+		Author: Declan Mullane  |  Updated: November 6th, 2019
 	</footer>
 
 </body>

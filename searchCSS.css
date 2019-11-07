@@ -26,6 +26,12 @@
 	height: 30px;
 }
 
+/* */
+#locSearch {
+	width: 20px;
+	height: 20px;
+}
+
 /* Style submit button. */
 #submitSearch {
 	height: 30px;
